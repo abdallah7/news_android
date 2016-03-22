@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.abdallah.test.MainActivity">
+
+
+    <ImageView
+        android:layout_width="163dp"
+        android:layout_height="180dp"
+        android:id="@+id/profile-img"
+        android:src="@drawable/pic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line"
+        android:layout_below="@+id/profile-img"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/line"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="personal info :"
+        android:id="@+id/personal-info"
+        android:layout_below="@+id/line"
+        android:layout_alignLeft="@+id/line"
+        android:layout_alignStart="@+id/line"
+        android:textSize="25dp"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fname :"
+        android:id="@+id/user-fname"
+        android:layout_below="@+id/personal-info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#444444"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lname :"
+        android:id="@+id/user-lname"
+        android:textColor="#444444"
+        android:textSize="20dp"
+        android:layout_below="@+id/user-fname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:id="@+id/user-email"
+        android:textColor="#444444"
+        android:textSize="20dp"
+        android:layout_below="@+id/user-lname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="city :"
+        android:id="@+id/user-city"
+        android:textColor="#444444"
+        android:textSize="20dp"
+        android:layout_below="@+id/user-email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit-user-fname"
+        android:editable="true"
+        android:inputType="text"
+        android:text="abdallah"
+        android:layout_alignBottom="@+id/user-fname"
+        android:layout_alignLeft="@+id/edit-user-email"
+        android:layout_alignStart="@+id/edit-user-email" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit-user-lname"
+        android:editable="true"
+        android:inputType="text"
+        android:text="ramdan"
+        android:layout_alignBottom="@+id/user-lname"
+        android:layout_alignLeft="@+id/edit-user-fname"
+        android:layout_alignStart="@+id/edit-user-fname" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edit-user-email"
+        android:layout_alignBottom="@+id/user-email"
+        android:layout_toRightOf="@+id/user-fname"
+        android:layout_toEndOf="@+id/user-fname"
+        android:text="abdallah@yahoo.com" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit-user-city"
+        android:layout_alignBottom="@+id/user-city"
+        android:layout_toRightOf="@+id/user-lname"
+        android:layout_toEndOf="@+id/user-lname"
+        android:text="cairo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update info"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button-update-personal-info"
+        android:textColor="#3e3d3d"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="home location"
+        android:id="@+id/home-location"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/personal-info"
+        android:layout_toEndOf="@+id/personal-info"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+        android:singleLine="false"
+        android:textColor="#545353" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit-home-location"
+        android:layout_below="@+id/home-location"
+        android:layout_alignLeft="@+id/home-location"
+        android:layout_alignStart="@+id/home-location"
+        android:width="150dp"
+        android:text="50,helwan,street" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go"
+        android:id="@+id/button-go-home"
+        android:layout_below="@+id/edit-home-location"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update location"
+        android:id="@+id/button-update-location"
+        android:layout_alignBottom="@+id/line"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone :"
+        android:id="@+id/phone"
+        android:layout_below="@+id/user-city"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#444444"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit-user-phone"
+        android:text="01140639040"
+        android:layout_alignLeft="@+id/edit-user-city"
+        android:layout_alignStart="@+id/edit-user-city"
+        android:layout_alignBottom="@+id/phone"
+        android:inputType="phone" />
+
+</RelativeLayout>
